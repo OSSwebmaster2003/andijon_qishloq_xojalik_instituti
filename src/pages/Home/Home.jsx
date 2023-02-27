@@ -3,7 +3,7 @@ import "./home.scss";
 
 function Home(props) {
   return (
-    <div>
+    <div className="home_page">
       <h1>SDalom</h1>
     </div>
   );

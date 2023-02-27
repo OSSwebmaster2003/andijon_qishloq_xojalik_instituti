@@ -13,3 +13,20 @@ ul{
 a{
   text-decoration: none;
 }
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url('./assets/fonts/Gilroy-Medium.ttf');
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url('./assets/fonts/Gilroy-Bold.ttf');
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./assets/fonts/Gilroy-Thin.ttf");
+}
+@font-face {
+  font-family: "Gilroy-UltraLight";
+  src: url("./assets/fonts/Gilroy-UltraLight.ttf");
+}
