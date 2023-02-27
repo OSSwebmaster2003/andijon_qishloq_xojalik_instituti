@@ -301,3 +301,8 @@
     width: calc(100% - 10px - 7px - 40px);
   }
 }
+@media (min-width: 880px) {
+  .mobile_open {
+    display: none;
+  }
+}
