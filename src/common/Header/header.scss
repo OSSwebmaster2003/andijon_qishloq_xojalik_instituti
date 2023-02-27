@@ -1,0 +1,192 @@
+.header {
+  width: 100%;
+  padding: 17px 120px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  .header_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 75px;
+    .header_search {
+      width: calc(100% - 152px - 230px - 150px);
+      .search_wrapper {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 17px 20px;
+        background: #f7f7f7;
+        border: 1px solid rgba(58, 58, 58, 0.7);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 5.00521px;
+        gap: 15px;
+        input {
+          width: calc(100% - 55px);
+          height: 100%;
+          background: none;
+          border: none;
+          outline: none;
+          font-family: "Gilroy", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          color: #3a3a3a;
+          opacity: 0.5;
+          &::placeholder {
+            font-family: "Gilroy", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #3a3a3a;
+            opacity: 0.5;
+          }
+        }
+        .button_wrapper {
+          height: 100%;
+          padding-left: 15px;
+          border-left: 1.00104px solid rgba(#000000, 0.2);
+          button {
+            width: 25px;
+            height: 100%;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            cursor: pointer;
+            svg {
+              width: 100%;
+              height: 100%;
+              background: none;
+            }
+          }
+        }
+      }
+    }
+    .header_actions {
+      display: flex;
+      align-items: start;
+      justify-content: flex-end;
+      gap: 50px;
+      .header_profile {
+        width: 40px;
+        height: 40px;
+        a {
+          text-decoration: none;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .header_lang {
+        .ant-dropdown-trigger {
+          .ant-space {
+            .ant-space-item {
+              img {
+                width: 40px;
+                height: 40px;
+              }
+              &:first-child {
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
+      .search {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .header {
+    padding: 17px 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .header .header_wrapper .header_actions {
+    gap: 20px;
+  }
+  .header .header_wrapper {
+    gap: 45px;
+  }
+  .header .header_wrapper .header_search {
+    width: calc(100% - 122px - 230px - 90px);
+  }
+}
+@media (max-width: 880px) {
+  .header .header_wrapper .header_search {
+    display: none;
+  }
+  .header .header_wrapper .header_actions .search {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .header_wrapper .header_actions .search svg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+@media (max-width: 600px) {
+  .header .header_wrapper .header_logo img {
+    width: 180px;
+  }
+  .header .header_wrapper .header_actions .search {
+    width: 25px;
+  }
+  .header .header_wrapper .header_actions .header_profile {
+    width: 25px;
+  }
+  .header
+    .header_wrapper
+    .header_actions
+    .header_lang
+    .ant-dropdown-trigger
+    .ant-space
+    .ant-space-item
+    img {
+    width: 25px;
+    height: auto;
+  }
+  .header
+    .header_wrapper
+    .header_actions
+    .header_lang
+    .ant-dropdown-trigger
+    .ant-space
+    .ant-space-item:first-child {
+    height: 25px;
+  }
+  .header .header_wrapper .header_actions {
+    align-items: center;
+    gap: 12px;
+  }
+  .header {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 400px) {
+  .header .header_wrapper .header_logo img {
+    width: 140px;
+  }
+  .header .header_wrapper {
+    gap: 20px;
+  }
+}

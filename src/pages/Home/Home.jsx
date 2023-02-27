@@ -2,7 +2,11 @@ import React from "react";
 import "./home.scss";
 
 function Home(props) {
-  return <div>Home</div>;
+  return (
+    <div>
+      <h1>SDalom</h1>
+    </div>
+  );
 }
 
 export default Home;
