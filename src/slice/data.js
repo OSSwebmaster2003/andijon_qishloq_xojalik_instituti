@@ -8,6 +8,13 @@ import freeCourse from "../assets/icons/freeCourse.svg";
 import library from "../assets/icons/library.svg";
 import aboutInstitute from "../assets/icons/aboutInstitute.svg";
 import student from "../assets/icons/student.svg";
+import cover1 from "../assets/books/cover1.svg";
+import cover2 from "../assets/books/cover2.svg";
+import cover3 from "../assets/books/cover3.svg";
+import cover4 from "../assets/books/cover4.svg";
+import cover5 from "../assets/books/cover5.svg";
+import cover6 from "../assets/books/cover6.svg";
+import cover7 from "../assets/books/cover7.svg";
 
 const initialState = {
   departments: [
@@ -73,6 +80,48 @@ const initialState = {
       body: "Institutdagi faol, iqtidorli va bilimdon talabalarni sarab bo’limi",
       link: "/best_students",
       img: student,
+    },
+  ],
+  most_read_books: [
+    {
+      id: 1,
+      cover: cover1,
+      info: "first book",
+    },
+    {
+      id: 2,
+      cover: cover2,
+      info: "second book",
+    },
+    {
+      id: 3,
+      cover: cover3,
+      info: "third book",
+    },
+    {
+      id: 4,
+      cover: cover4,
+      info: "fourth book",
+    },
+    {
+      id: 5,
+      cover: cover5,
+      info: "fifth book",
+    },
+    {
+      id: 6,
+      cover: cover6,
+      info: "sixth book",
+    },
+    {
+      id: 7,
+      cover: cover7,
+      info: "seventh book",
+    },
+    {
+      id: 8,
+      cover: cover1,
+      info: "eighth book",
     },
   ],
 };

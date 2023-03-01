@@ -72,12 +72,108 @@
       }
     }
   }
+  .most_read_books_section {
+    width: 100%;
+    margin-top: 195px;
+    padding-left: 220px;
+    .books_section_wrapper {
+      width: 100%;
+      background: #f7f7f7;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 10px 0px 0px 10px;
+      padding: 50px 120px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 28px;
+      .books_section_header {
+        width: 392px;
+        margin-left: -220px;
+        h1 {
+          font-family: "Gilroy-Medium", sans-serif;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 70px;
+          line-height: 88px;
+          color: #3a3a3a;
+        }
+      }
+      .books_section_body {
+        width: calc(100% - 392px - 20px + 220px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+        .most_read_books {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+          gap: 20px;
+          .most_read_book {
+            text-decoration: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: 0.3s linear all;
+            &:hover {
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+              margin-top: -7px;
+            }
+            .book_wrapper {
+              padding: 10px;
+              width: 100%;
+              img {
+                width: 100%;
+                border-radius: 30px;
+              }
+            }
+          }
+        }
+        button {
+          background: #fdd137;
+          border-radius: 10px;
+          border: 1px solid #fdd137;
+          outline: none;
+          padding: 17px 32px;
+          cursor: pointer;
+          transition: 0.3s linear all;
+          a {
+            text-decoration: none;
+            font-family: "Gilroy-Medium", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
+            color: #ffffff;
+            transition: 0.3s linear all;
+          }
+          &:hover {
+            background: none;
+            a {
+              color: #fdd137;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // media queries
 @media (max-width: 1770px) {
   .home_page .departments_section .departments_wrapper .departments_body {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+@media (max-width: 1660px) {
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_body
+    .most_read_books {
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
   }
 }
 @media (max-width: 1350px) {
@@ -89,10 +185,91 @@
   .home_page .departments_section {
     padding-right: 25px;
   }
+  .home_page .most_read_books_section {
+    padding-left: 25px;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_header {
+    margin-left: -145px;
+    width: 350px;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_body {
+    width: calc(100% - 20px - 350px + 145px);
+  }
+  .home_page .most_read_books_section .books_section_wrapper {
+    padding-right: 25px;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_header
+    h1 {
+    font-size: 60px;
+    line-height: 67px;
+  }
+}
+@media (max-width: 1200px) {
+  .home_page .most_read_books_section {
+    margin-top: 100px;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_body
+    .most_read_books {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_header {
+    width: 290px;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_body {
+    width: calc(100% - 20px - 290px + 145px);
+  }
 }
 @media (max-width: 900px) {
   .home_page .departments_section {
     margin-top: -45px;
+  }
+}
+@media (max-width: 850px) {
+  .home_page .most_read_books_section .books_section_wrapper {
+    padding: 45px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_header {
+    width: 100%;
+    margin: 0;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_body {
+    width: 100%;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_header
+    h1 {
+    font-size: 45px;
   }
 }
 @media (max-width: 704px) {
@@ -105,6 +282,9 @@
       margin-top: 0;
     }
   }
+  .home_page .most_read_books_section .books_section_wrapper {
+    padding: 30px 10px;
+  }
 }
 @media (max-width: 600px) {
   .home_page {
@@ -113,6 +293,17 @@
   .home_page .banner_section {
     height: calc(100vh - 75.64px);
   }
+  .home_page .most_read_books_section {
+    margin-top: 65px;
+    padding-left: 15px;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_header
+    h1 {
+    line-height: 60px;
+  }
 }
 @media (max-width: 550px) {
   .home_page .departments_section .departments_wrapper .departments_body {
@@ -120,6 +311,17 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_header
+    h1 {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .home_page .most_read_books_section .books_section_wrapper {
+    gap: 15px;
   }
 }
 @media (max-width: 400px) {
@@ -158,6 +360,24 @@
     .department_card {
     padding: 15px 10px;
   }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_body
+    .most_read_books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_body
+    .most_read_books
+    .most_read_book:hover {
+    margin-top: 0;
+  }
 }
 @media (max-width: 360px) {
   .home_page
@@ -177,5 +397,12 @@
     .card_wrapper
     p {
     font-size: 19px;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_header
+    h1 {
+    font-size: 29px;
   }
 }

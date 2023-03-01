@@ -7,6 +7,7 @@ import "./home.scss";
 
 function Home(props) {
   const { departments } = useSelector((state) => state.data);
+  const { most_read_books } = useSelector((state) => state.data);
   return (
     <div className="home_page">
       <div className="banner_section">
@@ -27,6 +28,27 @@ function Home(props) {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="most_read_books_section">
+        <div className="books_section_wrapper">
+          <div className="books_section_header">
+            <h1>ENG KO’P O’QILGAN KITOBLAR</h1>
+          </div>
+          <div className="books_section_body">
+            <div className="most_read_books">
+              {most_read_books.map(({ id, cover }) => (
+                <Link className="most_read_book" key={id}>
+                  <div className="book_wrapper">
+                    <img src={cover} alt="" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <button>
+              <Link>Barcha kitoblar</Link>
+            </button>
           </div>
         </div>
       </div>
