@@ -159,6 +159,58 @@
       }
     }
   }
+  .flats_section {
+    width: 100%;
+    margin-top: 100px;
+    padding-right: 120px;
+    .flats_wrapper {
+      width: 100%;
+      background: #f7f7f7;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 0px 10px 10px 0px;
+      padding: 50px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 50px;
+      .flats_header {
+        width: 100%;
+      }
+      .flats_body {
+        width: 100%;
+        padding: 0 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+        > button {
+          background: #fdd137;
+          border-radius: 10px;
+          padding: 17px 25px;
+          border: 1px solid #fdd137;
+          cursor: pointer;
+          transition: 0.3s linear all;
+          a {
+            font-family: "Gilroy-Medium", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            color: #ffffff;
+            transition: 0.3s linear all;
+          }
+          &:hover {
+            background: none;
+            a {
+              color: #fdd137;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // media queries
@@ -174,6 +226,11 @@
     .books_section_body
     .most_read_books {
     grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  }
+}
+@media (max-width: 1500px) {
+  .home_page .flats_section .flats_wrapper {
+    gap: 30px;
   }
 }
 @media (max-width: 1350px) {
@@ -211,6 +268,12 @@
     h1 {
     font-size: 60px;
     line-height: 67px;
+  }
+  .home_page .flats_section .flats_wrapper .flats_body {
+    padding: 0 25px;
+  }
+  .home_page .flats_section {
+    padding-right: 25px;
   }
 }
 @media (max-width: 1200px) {
@@ -322,6 +385,14 @@
   }
   .home_page .most_read_books_section .books_section_wrapper {
     gap: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .home_page .flats_section .flats_wrapper {
+    gap: 20px;
+  }
+  .home_page .flats_section .flats_wrapper .flats_body {
+    gap: 10px;
   }
 }
 @media (max-width: 400px) {

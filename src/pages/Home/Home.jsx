@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import Heading from "../../components/Header/Heading";
+import ResSlider from "../../components/ResSlider/ResSlider";
 import "./home.scss";
 
 function Home(props) {
@@ -48,6 +49,19 @@ function Home(props) {
             </div>
             <button>
               <Link>Barcha kitoblar</Link>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="flats_section">
+        <div className="flats_wrapper">
+          <div className="flats_header">
+            <Heading title="XONADONLAR RO’YXATI" />
+          </div>
+          <div className="flats_body">
+            <ResSlider />
+            <button>
+              <Link>Barchasini ko’rish</Link>
             </button>
           </div>
         </div>
