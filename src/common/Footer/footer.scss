@@ -322,3 +322,14 @@
     gap: 25px;
   }
 }
+@media (max-width: 350px) {
+  .footer .footer_wrapper .footer_details .footer_info > div {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .footer .footer_wrapper .footer_details .footer_icons {
+    width: 100%;
+    justify-content: center;
+  }
+}

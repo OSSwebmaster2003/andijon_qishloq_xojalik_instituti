@@ -348,6 +348,9 @@
   .home_page .most_read_books_section .books_section_wrapper {
     padding: 30px 10px;
   }
+  .home_page .flats_section .flats_wrapper .flats_body {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 600px) {
   .home_page {
@@ -366,6 +369,9 @@
     .books_section_header
     h1 {
     line-height: 60px;
+  }
+  .home_page .flats_section {
+    padding-right: 10px;
   }
 }
 @media (max-width: 550px) {

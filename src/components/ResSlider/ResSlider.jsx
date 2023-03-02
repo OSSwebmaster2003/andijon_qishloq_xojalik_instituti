@@ -9,10 +9,14 @@ function ResSlider(props) {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    autoplay: true,
+    // speed: 2000,
+    autoplaySpeed: 3500,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1401,
