@@ -19,6 +19,9 @@ import flat1 from "../assets/flats/flat1.svg";
 import flat2 from "../assets/flats/flat2.svg";
 import flat3 from "../assets/flats/flat3.svg";
 import flat4 from "../assets/flats/flat4.svg";
+import news1 from "../assets/news/news1.svg";
+import news2 from "../assets/news/news2.svg";
+import news3 from "../assets/news/news3.svg";
 
 const initialState = {
   departments: [
@@ -260,6 +263,38 @@ const initialState = {
       condition: "Yotoqxona, hammom, wifi",
       owner: "Teshaboyev Boltavoy ",
       cost: "200 000 so‘m",
+    },
+  ],
+  news: [
+    {
+      id: 1,
+      title: "Texnologiya",
+      body: "Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi? Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi?",
+      img: news1,
+    },
+    {
+      id: 2,
+      title: "Mukofotlar",
+      body: "Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi? Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi?",
+      cover: news3,
+    },
+    {
+      id: 3,
+      title: "Mukofotlar",
+      body: "Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi? Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi?",
+      cover: news3,
+    },
+    {
+      id: 4,
+      title: "Texnologiya",
+      body: "Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi? Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi?",
+      img: news2,
+    },
+    {
+      id: 5,
+      title: "Texnologiya",
+      body: "Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi? Mening navbatim keldimi? Ovozli yordamchiga qachon gapirishni o'rgatish Hali mening navbatimmi?",
+      img: news1,
     },
   ],
 };

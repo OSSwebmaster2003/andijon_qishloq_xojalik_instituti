@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import Heading from "../../components/Header/Heading";
 import ResSlider from "../../components/ResSlider/ResSlider";
+import report from "../../assets/icons/report.svg";
+import classroom from "../../assets/icons/classroom.svg";
+import student from "../../assets/icons/student.svg";
 import "./home.scss";
+import News from "../../components/News/News";
 
 function Home(props) {
   const { departments } = useSelector((state) => state.data);
@@ -65,6 +69,40 @@ function Home(props) {
             </button>
           </div>
         </div>
+      </div>
+      <div className="short_about_section">
+        <div className="short_about_wrapper">
+          <div className="all_courses">
+            <div className="for_image">
+              <img src={report} alt="" />
+            </div>
+            <div className="for_info">
+              <h1>6050+</h1>
+              <h4>Umumiy kurslar</h4>
+            </div>
+          </div>
+          <div className="all_students">
+            <div className="for_image">
+              <img src={student} alt="" />
+            </div>
+            <div className="for_info">
+              <h1>20550+</h1>
+              <h4>Umumiy studentlar</h4>
+            </div>
+          </div>
+          <div className="professors">
+            <div className="for_image">
+              <img src={classroom} alt="" />
+            </div>
+            <div className="for_info">
+              <h1>3055+</h1>
+              <h4>Tajribali ustozlar</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="news_section">
+        <News />
       </div>
     </div>
   );
