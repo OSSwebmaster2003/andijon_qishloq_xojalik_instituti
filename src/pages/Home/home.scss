@@ -277,6 +277,37 @@
   }
   .news_section {
     margin-top: 100px;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    button {
+      background: #fdd137;
+      border-radius: 10px;
+      border: 1px solid #fdd137;
+      outline: none;
+      padding: 17px 66px;
+      cursor: pointer;
+      transition: 0.3s linear all;
+      a {
+        font-family: "Gilroy-Medium", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s linear all;
+      }
+      &:hover {
+        background: none;
+        a {
+          color: #fdd137;
+        }
+      }
+    }
   }
 }
 
@@ -344,6 +375,9 @@
   }
   .home_page .short_about_section .short_about_wrapper {
     padding: 0 25px 50px 25px;
+  }
+  .home_page .news_section {
+    padding: 0 25px;
   }
 }
 @media (max-width: 1200px) {
@@ -450,6 +484,16 @@
     padding-top: 95px;
     margin-top: 80px;
   }
+  .home_page .news_section {
+    margin-top: 80px;
+  }
+  .home_page
+    .most_read_books_section
+    .books_section_wrapper
+    .books_section_header
+    h1 {
+    text-align: center;
+  }
 }
 @media (max-width: 704px) {
   .home_page
@@ -527,6 +571,11 @@
   }
   .home_page .short_about_section {
     margin-top: 50px;
+  }
+  .home_page .news_section {
+    padding: 0 10px;
+    margin-top: 50px;
+    gap: 20px;
   }
 }
 @media (max-width: 550px) {
@@ -656,5 +705,11 @@
     .books_section_header
     h1 {
     font-size: 29px;
+  }
+  .home_page .news_section button {
+    padding: 17px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

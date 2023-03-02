@@ -103,6 +103,9 @@ function Home(props) {
       </div>
       <div className="news_section">
         <News />
+        <button>
+          <Link>Barcha yangliklar</Link>
+        </button>
       </div>
     </div>
   );
