@@ -1,18 +1,23 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import Banner from "../../components/Banner/Banner";
 import Heading from "../../components/Header/Heading";
 import ResSlider from "../../components/ResSlider/ResSlider";
 import report from "../../assets/icons/report.svg";
 import classroom from "../../assets/icons/classroom.svg";
 import student from "../../assets/icons/student.svg";
-import "./home.scss";
 import News from "../../components/News/News";
+import "./home.scss";
 
 function Home(props) {
   const { departments } = useSelector((state) => state.data);
   const { most_read_books } = useSelector((state) => state.data);
+  const defaultState = {
+    center: [40.8154, 72.2837],
+    zoom: 5,
+  };
   return (
     <div className="home_page">
       <div className="banner_section">
@@ -106,6 +111,44 @@ function Home(props) {
         <button>
           <Link>Barcha yangliklar</Link>
         </button>
+      </div>
+      <div className="map_section">
+        <div className="map_wrapper">
+          <div className="map_header">BIZ BILAN BOGLANISH</div>
+          <div className="map_body">
+            <div className="contact_modal">
+              <div className="contact_wrapper">
+                <div className="contact_wrapper">
+                  <div className="contact_header">
+                    <h2>Biz bilan bog’lanish</h2>
+                  </div>
+                  <form>
+                    <div>
+                      <input type="text" placeholder="Ism" />
+                      <input type="text" placeholder="Familiya" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Tel:" />
+                      <input type="text" placeholder="Email" />
+                    </div>
+                    <div className="for_comment">
+                      <label>Mavzu</label>
+                      <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button>Habar qoldirish</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div className="andijan_map">
+              <YMaps className="map">
+                <Map defaultState={defaultState}>
+                  <Placemark geometry={[55.684758, 37.738521]} />
+                </Map>
+              </YMaps>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
