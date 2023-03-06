@@ -1,0 +1,36 @@
+.andijan_map {
+  width: 100%;
+  height: calc(100vh - 300px);
+  border-radius: 15px;
+  filter: drop-shadow(4px 10px 25px rgba(0, 0, 0, 0.2));
+  > div {
+    width: 100% !important;
+    height: 100% !important;
+    > ymaps {
+      width: 100% !important;
+      height: 100% !important;
+      border-radius: 15px;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .home_page .map_section .map_wrapper .map_body .andijan_map {
+    height: 680px;
+  }
+  .home_page
+    .map_section
+    .map_wrapper
+    .map_body
+    .andijan_map
+    > div
+    > ymaps
+    > ymaps {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 1250px) {
+  .home_page .map_section .map_wrapper .map_body .andijan_map {
+    height: calc(100vh - 200px);
+  }
+}

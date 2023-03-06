@@ -1,0 +1,113 @@
+.room_orders_page {
+  width: 100%;
+  padding-top: 174px;
+  padding-bottom: 106px;
+  .room_orders_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 60px;
+    .room_orders_header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+    .room_orders_body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 25px;
+      padding-left: 120px;
+      .room_orders_filters {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        .dropdown-toggle {
+          padding: 15px 17.5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 42.75px;
+          font-family: "Gilroy-Medium", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: rgba(0, 0, 0, 0.8);
+          background: #fafafa;
+          border: 0.8px solid rgba(0, 0, 0, 0.11);
+          box-shadow: 0.1px 0.1px 2px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          transition: 0.3s linear all;
+          &:after {
+            margin-left: 0;
+            border-top: 8px solid;
+            border-right: 8px solid transparent;
+            border-bottom: 0;
+            border-left: 8px solid transparent;
+            color: rgba(0, 0, 0, 0.25);
+          }
+          &:hover {
+            border: 1px solid #000;
+          }
+        }
+        button {
+          padding: 11px 41px 11px 10px;
+          background: #fafafa;
+          border: 0.8px solid rgba(0, 0, 0, 0.11);
+          box-shadow: 0.1px 0.1px 2px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+        }
+        .room_number {
+          font-family: "Gilroy-Medium", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          color: #000000;
+          opacity: 0.25;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          cursor: pointer;
+          transition: 0.3s linear all;
+          &:hover {
+            opacity: 1;
+            border: 1px solid #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .room_orders_page .room_orders_wrapper {
+    gap: 20px;
+  }
+  .room_orders_page .room_orders_wrapper .room_orders_body {
+    padding-left: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .room_orders_page .room_orders_wrapper .room_orders_body {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .room_orders_page {
+    padding-top: 87px;
+  }
+  .room_orders_page
+    .room_orders_wrapper
+    .room_orders_body
+    .room_orders_filters
+    .room_number {
+    display: none;
+  }
+}

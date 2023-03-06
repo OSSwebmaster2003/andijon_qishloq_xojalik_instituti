@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
+// import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import Banner from "../../components/Banner/Banner";
 import Heading from "../../components/Header/Heading";
 import ResSlider from "../../components/ResSlider/ResSlider";
@@ -10,14 +10,11 @@ import classroom from "../../assets/icons/classroom.svg";
 import student from "../../assets/icons/student.svg";
 import News from "../../components/News/News";
 import "./home.scss";
+import AndijanMap from "../../components/AndijanMap/AndijanMap";
 
 function Home(props) {
   const { departments } = useSelector((state) => state.data);
   const { most_read_books } = useSelector((state) => state.data);
-  const defaultState = {
-    center: [40.8154, 72.2837],
-    zoom: 5,
-  };
   return (
     <div className="home_page">
       <div className="banner_section">
@@ -140,13 +137,7 @@ function Home(props) {
                 </div>
               </div>
             </div>
-            <div className="andijan_map">
-              <YMaps className="map">
-                <Map defaultState={defaultState}>
-                  <Placemark geometry={[55.684758, 37.738521]} />
-                </Map>
-              </YMaps>
-            </div>
+            <AndijanMap />
           </div>
         </div>
       </div>
