@@ -6,6 +6,7 @@ import Books from "./pages/Books/Books";
 import Header from "./common/Header/Header";
 import Footer from "./common/Footer/Footer";
 import RoomList from "./pages/RoomList/RoomList";
+import CanteenList from "./pages/CanteenList/CanteenList";
 
 function App(props) {
   return (
@@ -16,6 +17,7 @@ function App(props) {
         <Route path="/room_ordering" element={<RoomOrders />} />
         <Route path="/library" element={<Books />} />
         <Route path="/house_renting" element={<RoomList />} />
+        <Route path="/canteens_and_cafes" element={<CanteenList />} />
       </Routes>
       <Footer />
     </div>
