@@ -1,0 +1,246 @@
+.room_list_page {
+  padding-top: 160px;
+  padding-bottom: 70px;
+  background: #ededed;
+  width: 100%;
+  .room_list_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 60px;
+    .room_list_header {
+      width: 100%;
+    }
+    .room_list_body {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 25px;
+      padding: 0 120px;
+      .flats_card {
+        width: 100%;
+        background: #ffffff;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.3s linear all;
+        &:hover {
+          box-shadow: 10px 10px 15px rgb(0 0 0 / 15%);
+        }
+        .card_img {
+          width: 100%;
+          max-height: 350px;
+          border-radius: 15px;
+          img {
+            width: 100%;
+            max-height: 100%;
+            border-radius: 15px;
+          }
+        }
+        .card_body {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 20px;
+          padding: 20px 20px 32px 20px;
+          h1 {
+            width: 100%;
+            text-align: start;
+            font-family: "Gilroy-Medium", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: #fbcf35;
+          }
+          .card_details {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+            p {
+              width: 100%;
+              font-family: "Gilroy-Medium", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 25px;
+              color: #3a3a3a;
+              span {
+                font-weight: 600;
+              }
+            }
+          }
+          .card_actions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+            h2 {
+              font-family: "Gilroy-Medium", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 40px;
+              color: #fbcf35;
+            }
+            p {
+              font-family: "Gilroy-Medium", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 25px;
+              color: #3a3a3a;
+              span {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1720px) {
+  .room_list_page .room_list_wrapper .room_list_body {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 1600px) {
+  .room_list_page .room_list_wrapper .room_list_body {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+@media (max-width: 1350px) {
+  .room_list_page .room_list_wrapper .room_list_body {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .room_list_page .room_list_wrapper {
+    gap: 30px;
+  }
+}
+@media (max-width: 775px) {
+  .room_list_page .room_list_wrapper .room_list_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .room_list_page .room_list_wrapper .room_list_body .flats_card {
+    padding-top: 20px;
+  }
+  .room_list_page .room_list_wrapper .room_list_body .flats_card .card_img {
+    max-height: inherit;
+    height: 360px;
+  }
+  .room_list_page .room_list_wrapper .room_list_body .flats_card .card_img img {
+    width: 100%;
+    max-height: inherit;
+    height: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .room_list_page .room_list_wrapper .room_list_body .flats_card .card_img {
+    max-height: inherit;
+    height: inherit;
+  }
+  .room_list_page .room_list_wrapper .room_list_body .flats_card .card_img img {
+    width: 100%;
+    max-height: inherit;
+    height: inherit;
+  }
+  .room_list_page .room_list_wrapper .room_list_body .flats_card {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .room_list_page {
+    padding-top: 100px;
+  }
+  .room_list_page .room_list_wrapper .room_list_body {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 450px) {
+  .room_list_page .room_list_wrapper .room_list_body .flats_card .card_body h1 {
+    font-size: 29px;
+    line-height: 38px;
+  }
+  .room_list_page
+    .room_list_wrapper
+    .room_list_body
+    .flats_card
+    .card_body
+    .card_details
+    p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .room_list_page
+    .room_list_wrapper
+    .room_list_body
+    .flats_card
+    .card_body
+    .card_actions
+    h2 {
+    font-size: 29px;
+    line-height: 38px;
+  }
+  .room_list_page
+    .room_list_wrapper
+    .room_list_body
+    .flats_card
+    .card_body
+    .card_actions
+    p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .room_list_page .room_list_wrapper .room_list_body .flats_card .card_body h1 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .room_list_page
+    .room_list_wrapper
+    .room_list_body
+    .flats_card
+    .card_body
+    .card_details
+    p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .room_list_page
+    .room_list_wrapper
+    .room_list_body
+    .flats_card
+    .card_body
+    .card_actions
+    h2 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .room_list_page
+    .room_list_wrapper
+    .room_list_body
+    .flats_card
+    .card_body
+    .card_actions
+    p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
