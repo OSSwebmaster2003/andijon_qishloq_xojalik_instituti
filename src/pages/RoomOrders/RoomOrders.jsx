@@ -17,9 +17,7 @@ function RoomOrders(props) {
             <Apartment />
             <button className="room_number">Xona raqami</button>
           </div>
-          {/* <div className="room_orders_map"> */}
           <AndijanMap />
-          {/* </div> */}
         </div>
       </div>
     </div>
