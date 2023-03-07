@@ -59,6 +59,14 @@
             border: 1px solid #000;
           }
         }
+        .dropdown-menu {
+          padding: 0;
+          button {
+            border: none;
+            border-radius: 0px;
+            border-bottom: 1px solid #e5e5e5;
+          }
+        }
         button {
           padding: 11px 41px 11px 10px;
           background: #fafafa;

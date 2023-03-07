@@ -16,9 +16,9 @@ function Header(props) {
   return (
     <header className="header">
       <div className="header_wrapper">
-        <div className="header_logo">
+        <Link to="/" className="header_logo">
           <img src={logo} alt="logo" />
-        </div>
+        </Link>
         <div className="header_search">
           <div className="search_wrapper">
             <input type="text" placeholder="kategoriya bo'yicha qidiruv" />
