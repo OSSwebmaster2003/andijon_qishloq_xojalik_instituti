@@ -701,6 +701,64 @@ const initialState = {
       img: vacancy1,
     },
   ],
+  courses: [
+    {
+      id: 1,
+      course: "1-kurs",
+    },
+    {
+      id: 2,
+      course: "2-kurs",
+    },
+    {
+      id: 3,
+      course: "3-kurs",
+    },
+    {
+      id: 4,
+      course: "4-kurs",
+    },
+  ],
+  faculties: [
+    {
+      id: 1,
+      faculty: "Agrotexnologiyalar",
+    },
+    {
+      id: 2,
+      faculty: "Qishloq Xo'jaligi",
+    },
+    {
+      id: 3,
+      faculty: "Muhandislik",
+    },
+  ],
+  fields: [
+    {
+      id: 1,
+      faculty: "Something",
+    },
+    {
+      id: 2,
+      faculty: "Another thing",
+    },
+    {
+      id: 3,
+      faculty: "Third thing",
+    },
+  ],
+  timetables: [
+    {
+      id: 1,
+      title: "2-8 Sentyabr 2022",
+      content: "1st timetable",
+    },
+    {
+      id: 2,
+      title: "2-8 Sentyabr 2023",
+      content: "2nd timetable",
+    },
+  ],
 };
 
 export const dataSlice = createSlice({

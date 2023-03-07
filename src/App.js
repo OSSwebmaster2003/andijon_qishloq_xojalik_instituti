@@ -8,6 +8,7 @@ import Footer from "./common/Footer/Footer";
 import RoomList from "./pages/RoomList/RoomList";
 import CanteenList from "./pages/CanteenList/CanteenList";
 import Vacancy from "./pages/Vacancy/Vacancy";
+import TimeTable from "./pages/TimeTable/TimeTable";
 
 function App(props) {
   return (
@@ -20,6 +21,7 @@ function App(props) {
         <Route path="/house_renting" element={<RoomList />} />
         <Route path="/canteens_and_cafes" element={<CanteenList />} />
         <Route path="/vacancies" element={<Vacancy />} />
+        <Route path="/timetable" element={<TimeTable />} />
       </Routes>
       <Footer />
     </div>

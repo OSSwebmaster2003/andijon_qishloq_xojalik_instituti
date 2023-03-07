@@ -1,0 +1,284 @@
+.timetable_page {
+  padding-top: 170px;
+  padding-bottom: 65px;
+  .timetable_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 60px;
+    .timetable_header {
+      width: 100%;
+      padding-right: 120px;
+    }
+    .timetable_body {
+      width: 100%;
+      padding: 0 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 30px;
+      .timetable_filters {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        #for_dropdown {
+          .dropdown {
+            width: 100%;
+            height: 100%;
+            .dropdown-toggle {
+              padding: 11px 20px;
+              background: #fafafa;
+              border: 0.8px solid rgba(0, 0, 0, 0.11);
+              box-shadow: 0.1px 0.1px 2px rgba(0, 0, 0, 0.1);
+              border-radius: 5px;
+              font-family: "Gilroy-Medium", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 18px;
+              color: rgba(0, 0, 0, 0.8);
+              gap: 22px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+      .timetable_slider {
+        width: 100%;
+        .slick-slider {
+          width: 100%;
+          .slick-list {
+            width: 100%;
+            .slick-track {
+              width: 100%;
+              .slick-slide {
+                width: 100%;
+                > div {
+                  .timetable_card {
+                    width: 100%;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: flex-start !important;
+                    justify-content: flex-start !important;
+                    gap: 30px !important;
+                    .timetable_card_header {
+                      width: 100%;
+                      height: 100px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      background: #fafafa;
+                      border-radius: 15px;
+                      h1 {
+                        font-family: "Gilroy-Medium", sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 35px;
+                        line-height: 42px;
+                        color: #000000;
+                      }
+                    }
+                    .timetable_card_body {
+                      width: 100%;
+                      height: calc(100vh - 300px);
+                      background: yellow;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .slick-dots {
+            display: none;
+          }
+          .slick-arrow {
+            top: 50px;
+            z-index: 4;
+          }
+          svg {
+            color: #000000;
+            font-size: 10px;
+          }
+          .slick-prev {
+            left: 30px;
+          }
+          .slick-next {
+            right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1350px) {
+  .timetable_page .timetable_wrapper .timetable_body {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 800px) {
+  .timetable_page {
+    padding-top: 130px;
+  }
+  .timetable_page .timetable_wrapper {
+    gap: 25px;
+  }
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_slider
+    .slick-slider
+    .slick-list
+    .slick-track
+    .slick-slide
+    > div
+    .timetable_card
+    .timetable_card_header
+    h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_slider
+    .slick-slider
+    .slick-list
+    .slick-track
+    .slick-slide
+    > div
+    .timetable_card
+    .timetable_card_header {
+    height: 80px;
+  }
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_slider
+    .slick-slider
+    .slick-arrow {
+    top: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_slider
+    .slick-slider
+    .slick-list
+    .slick-track
+    .slick-slide
+    > div
+    .timetable_card
+    .timetable_card_header {
+    border: 1px solid rgba(#000, 0.8);
+  }
+}
+@media (max-width: 600px) {
+  .timetable_page .timetable_wrapper .timetable_body {
+    padding: 0 15px;
+  }
+  .timetable_page {
+    padding-top: 110px;
+  }
+}
+@media (max-width: 550px) {
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_filters
+    #for_dropdown
+    .dropdown
+    .dropdown-toggle {
+    padding: 11px;
+  }
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_filters
+    #for_dropdown
+    .dropdown
+    .dropdown-toggle {
+    gap: 8px;
+  }
+  .timetable_page {
+    padding-bottom: 40px;
+  }
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_slider
+    .slick-slider
+    .slick-list
+    .slick-track
+    .slick-slide
+    > div
+    .timetable_card
+    .timetable_card_header
+    h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_slider
+    .slick-slider
+    .slick-prev {
+    left: 15px;
+  }
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_slider
+    .slick-slider
+    .slick-next {
+    right: 15px;
+  }
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_slider
+    .slick-slider
+    .slick-list
+    .slick-track
+    .slick-slide
+    > div
+    .timetable_card
+    .timetable_card_header {
+    height: 60px;
+  }
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_slider
+    .slick-slider
+    .slick-arrow {
+    top: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .timetable_page
+    .timetable_wrapper
+    .timetable_body
+    .timetable_filters
+    .field_dropdown {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .timetable_page {
+    padding-top: 80px;
+  }
+  .timetable_page .timetable_wrapper .timetable_header {
+    padding-right: 15px;
+  }
+}
