@@ -91,6 +91,27 @@
                       height: calc(100vh - 300px);
                       background: yellow;
                     }
+                    .for_image {
+                      width: 100%;
+                      height: calc(100vh - 100px);
+                      overflow: auto;
+                      padding-bottom: 10px;
+                      padding-right: 10px;
+                      &::-webkit-scrollbar {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 4px;
+                      }
+                      &::-webkit-scrollbar-track {
+                        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                        border-radius: 4px;
+                      }
+                      &::-webkit-scrollbar-thumb {
+                        border-radius: 4px;
+                        background-color: #437e4a;
+                        outline: none;
+                      }
+                    }
                   }
                 }
               }

@@ -82,7 +82,9 @@ function TimeTable(props) {
                   <div className="timetable_card_header">
                     <h1>{item.title}</h1>
                   </div>
-                  <div className="timetable_card_body">{item.content}</div>
+                  <div className="for_image">
+                    <img src={item.content} alt="" />
+                  </div>
                 </div>
               ))}
             </Slider>

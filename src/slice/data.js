@@ -24,6 +24,7 @@ import news2 from "../assets/news/news2.svg";
 import news3 from "../assets/news/news3.svg";
 import cafe1 from "../assets/canteen/cafe1.png";
 import vacancy1 from "../assets/vacancy/vacancy1.png";
+import timetableImg from "../assets/timetable/timetable.svg";
 
 const initialState = {
   departments: [
@@ -751,12 +752,12 @@ const initialState = {
     {
       id: 1,
       title: "2-8 Sentyabr 2022",
-      content: "1st timetable",
+      content: timetableImg,
     },
     {
       id: 2,
       title: "2-8 Sentyabr 2023",
-      content: "2nd timetable",
+      content: timetableImg,
     },
   ],
 };
