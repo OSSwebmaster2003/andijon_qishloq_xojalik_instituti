@@ -9,6 +9,8 @@ import RoomList from "./pages/RoomList/RoomList";
 import CanteenList from "./pages/CanteenList/CanteenList";
 import Vacancy from "./pages/Vacancy/Vacancy";
 import TimeTable from "./pages/TimeTable/TimeTable";
+import FreeCourses from "./pages/FreeCourses/FreeCourses";
+import About from "./pages/About/About";
 
 function App(props) {
   return (
@@ -22,6 +24,8 @@ function App(props) {
         <Route path="/canteens_and_cafes" element={<CanteenList />} />
         <Route path="/vacancies" element={<Vacancy />} />
         <Route path="/timetable" element={<TimeTable />} />
+        <Route path="/free_courses" element={<FreeCourses />} />
+        <Route path="/about_institute" element={<About />} />
       </Routes>
       <Footer />
     </div>

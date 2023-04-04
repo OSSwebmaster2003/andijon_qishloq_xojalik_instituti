@@ -25,6 +25,11 @@ import news3 from "../assets/news/news3.svg";
 import cafe1 from "../assets/canteen/cafe1.png";
 import vacancy1 from "../assets/vacancy/vacancy1.png";
 import timetableImg from "../assets/timetable/timetable.svg";
+import math from "../assets/courses/math.jpg";
+import engineering from "../assets/courses/engineering.jpeg";
+import physics from "../assets/courses/physics.png";
+import programming from "../assets/courses/programming.jpg";
+import agro from "../assets/courses/agro.jpg";
 
 const initialState = {
   departments: [
@@ -88,7 +93,7 @@ const initialState = {
       id: 9,
       title: "Iqtidorli talabalar",
       body: "Institutdagi faol, iqtidorli va bilimdon talabalarni sarab bo’limi",
-      link: "/best_students",
+      link: "/",
       img: student,
     },
   ],
@@ -758,6 +763,63 @@ const initialState = {
       id: 2,
       title: "2-8 Sentyabr 2023",
       content: timetableImg,
+    },
+  ],
+  free_courses: [
+    {
+      id: 1,
+      science: "Matematika",
+      prof: "Otabek Sodiqov",
+      capacity: "25 kishi",
+      number: "+998 93 684 37 57",
+      time: "16:00 - 18:00",
+      img: math,
+      full_info:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eum quasi inventore?",
+    },
+    {
+      id: 2,
+      science: "Injineriya",
+      prof: "Mirshod Murodov",
+      capacity: "15 kishi",
+      number: "+998 94 683 12 32",
+      time: "12:00 - 13:00",
+      img: engineering,
+      full_info:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ratione in ipsa iste veniam saepe nihil itaque recusandae nemo harum!",
+    },
+    {
+      id: 3,
+      science: "Fizika",
+      prof: "Dilshod Murodov",
+      capacity: "12 kishi",
+      number: "+998 94 683 18 32",
+      time: "13:00 - 15:00",
+      img: physics,
+      full_info:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, repellendus! Quae qui enim cupiditate et sit esse laborum quo, totam expedita, consequatur autem a quaerat.",
+    },
+    {
+      id: 4,
+      science: "Dasturlash",
+      prof: "Ulug'bek Temirov",
+      capacity: "18 kishi",
+      number: "+998 97 123 87 43",
+      time: "17:00 - 19:00",
+      img: programming,
+      full_info:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nostrum nam suscipit deserunt! Magni modi corporis mollitia ab nulla doloremque quod illo tempora iure recusandae? Excepturi ad dolore voluptatem beatae sit quia.",
+    },
+    {
+      id: 5,
+      science: "Agrotexnologiya",
+      prof: "Jamshid Toshov",
+      capacity: "100 kishi",
+      number: "+998 99 876 10 20",
+      time: "15:00 - 18:00",
+      img: agro,
+      full_info:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni nobis quidem explicabo aperiam ipsa, quaerat, a impedit eos et officia quas saepe totam aut! Nobis fuga earum architecto eveniet vel voluptate quibusdam, magni possimus quaerat quia autem. Recusandae asperiores dolorum nisi saepe vel voluptates vitae.",
     },
   ],
 };

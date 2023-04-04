@@ -1,0 +1,182 @@
+.about_page {
+  padding-top: 160px;
+  width: 100%;
+  padding-bottom: 60px;
+  .about_wrapper {
+    width: 100%;
+    padding: 0 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0px;
+    position: relative;
+    .about_info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 60px;
+      .about_header {
+        width: 100%;
+        h1 {
+          font-size: 48px;
+          font-weight: 700;
+          font-family: "Gilroy-Medium", sans-serif;
+        }
+      }
+      .about_text {
+        padding: 40px;
+        padding-right: 70px;
+        background-color: #f5f6f7;
+        .text_wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 15px;
+          h2 {
+            text-transform: uppercase;
+            font-size: 18px;
+            color: #838893;
+            font-family: "Gilroy-Medium", sans-serif;
+          }
+          h1 {
+            font-size: 36px;
+            font-weight: 700;
+            font-family: "Gilroy-Medium", sans-serif;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Gilroy-Medium", sans-serif;
+          }
+          ul {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 8px;
+            padding-left: 20px;
+            li {
+              list-style-type: disc;
+              font-size: 16px;
+              font-weight: 500;
+              font-family: "Gilroy-Medium", sans-serif;
+              color: #838893;
+            }
+          }
+        }
+      }
+    }
+    .about_img {
+      position: absolute;
+      top: 0;
+      right: 120px;
+      width: 46%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .about_page .about_wrapper .about_info {
+    width: 600px;
+  }
+  .about_page .about_wrapper .about_img {
+    top: 0;
+    right: 0;
+    position: relative;
+    width: calc(100% - 600px);
+  }
+}
+@media (max-width: 1350px) {
+  .about_page .about_wrapper .about_img {
+    width: 600px;
+  }
+  .about_page .about_wrapper .about_info {
+    width: calc(100% - 600px);
+  }
+  .about_page .about_wrapper {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 1280px) {
+  .about_page .about_wrapper .about_img {
+    width: 450px;
+  }
+  .about_page .about_wrapper .about_info {
+    width: calc(100% - 450px);
+  }
+}
+@media (max-width: 1150px) {
+  .about_page .about_wrapper .about_img {
+    width: 400px;
+  }
+  .about_page .about_wrapper .about_info {
+    width: calc(100% - 400px);
+  }
+}
+@media (max-width: 900px) {
+  .about_page .about_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .about_page .about_wrapper .about_info {
+    width: 100%;
+  }
+  .about_page .about_wrapper .about_img {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .about_page {
+    padding-top: 130px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .about_page {
+    padding-top: 101.65px;
+  }
+  .about_page .about_wrapper {
+    padding: 0 15px;
+  }
+  .about_page .about_wrapper .about_info .about_text {
+    padding: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .about_page {
+    padding-top: 90.16px;
+  }
+  .about_page .about_wrapper .about_info {
+    gap: 20px;
+  }
+  .about_page .about_wrapper .about_info .about_header h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .about_page .about_wrapper .about_info .about_text {
+    padding: 15px;
+  }
+  .about_page .about_wrapper .about_info .about_text .text_wrapper h2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .about_page .about_wrapper .about_info .about_text .text_wrapper h1 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .about_page .about_wrapper .about_info .about_text .text_wrapper p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+} ;

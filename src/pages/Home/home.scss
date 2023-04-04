@@ -65,7 +65,6 @@
             }
           }
           &:hover {
-            margin-top: -15px;
             box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
           }
         }
@@ -118,7 +117,6 @@
             transition: 0.3s linear all;
             &:hover {
               box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-              margin-top: -7px;
             }
             .book_wrapper {
               padding: 10px;
@@ -314,6 +312,7 @@
     margin-top: 100px;
     padding-left: 120px;
     margin-bottom: 200px;
+    height: 800px;
     .map_wrapper {
       width: 100%;
       display: flex;
@@ -578,6 +577,12 @@
     padding: 20px 15px;
     width: 60%;
   }
+  .home_page .map_section {
+    height: 500px;
+  }
+  .home_page .map_section .map_wrapper .map_body .contact_modal {
+    top: 20px;
+  }
 }
 @media (max-width: 1200px) {
   .home_page .most_read_books_section {
@@ -766,6 +771,17 @@
     background: none;
     filter: none;
     padding: 0;
+  }
+  .home_page .map_section .map_wrapper .map_header {
+    display: none;
+  }
+  .home_page .map_section {
+    margin-top: 40px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .home_page .map_section .map_wrapper .map_body {
+    gap: 60px;
   }
 }
 @media (max-width: 704px) {
